@@ -1,3 +1,10 @@
+:root {
+    --off-black: #222;
+    --light-grey: #ddd;
+    --med-grey: #999;
+    --dark-grey: #444; 
+  }
+
 * {
     font-family: sans-serif;
 }
@@ -25,7 +32,7 @@
 }
 
 .nav-link {
-    color: #000;
+    color: var(--off-black);
     text-transform: uppercase;
     letter-spacing: 0.2rem;
     font-size: 1rem;
@@ -36,7 +43,8 @@
 }
 
 .nav-link.active {
-    border-left: 5px solid #bbb;
+    border-left: 5px solid var(--med-grey);
+    color: var(--dark-grey);
 }
 
 .header-img-container {
